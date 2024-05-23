@@ -1,5 +1,5 @@
 from typing import List, Dict
-
+from .interfaces.html_collector import HtmlCollectorInterface
 from bs4 import BeautifulSoup
 
 class HtmlCollector:
