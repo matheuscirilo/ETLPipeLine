@@ -1,10 +1,12 @@
 # importa a classe que vai ser testada
 from .http_requester import HttpRequester
 
+# comando dado na pasta ETLPipeLine -> pytest -s -v src/drivers/http_requester_test.py
+
 #cria uma classe de teste
 def test_request_from_page(requests_mock):
     #executa os métodos dentro da classe utilizado o pytest
-    # comando dado na pasta ETLPipeLine -> pytest -s -v src/drivers/http_requester_test.py
+    
 
     url = 'https://web.archive.org/web/20121007172955/https://www.nga.gov/collection/anZ1.htm'
     response_context = '<h1.OlaMundo</h1>'
