@@ -1,6 +1,6 @@
 from collections import namedtuple
 
-transformContract = namedtuple(
+TransformContract = namedtuple(
     "TransformContract",
     '''
         load_content
