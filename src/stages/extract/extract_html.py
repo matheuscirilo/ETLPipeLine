@@ -8,9 +8,11 @@ from src.errors.extract_error import ExtractError
 class ExtractHtml:
     
     def __init__(self, http_requester: HttpRequesterInterface, html_collector: HtmlCollectorInterface) -> None:
+        #Drivers
         self.__http_requester = http_requester
         self.__html_collector = html_collector
-        
+
+    # Retorno é o contrato (Tupla nomeada)    
     def extract(self) -> ExtractContract:
         try:
             html_information = self.__http_requester.request_from_page()
