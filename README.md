@@ -58,7 +58,7 @@ Certifique-se de ter os seguintes itens instalados:
 Isso irá extrair os dados da URL especificada, transformá-los e carregá-los no seu banco de dados MySQL.
 
 ## Testes
-Execute a suíte de testes usando pytest para garantir que tudo está funcionando corretamente:
+1. Execute a suíte de testes usando pytest para garantir que tudo está funcionando corretamente:
    ```bash
    pytest
    ```
