@@ -1,4 +1,5 @@
 import mysql.connector as mysql
+from decouple import config
 
 class DatabaseConnector:
 
@@ -7,11 +8,11 @@ class DatabaseConnector:
     @classmethod
     def connect(cls):
         db_connection = mysql.connect(
-            host="localhost",
-            port=3306,
-            database="pipeline_db",
-            user="root",
-            passwd="my-pw-@1"
+            host=config('DB_HOST'),
+            port=int(config('DB_PORT')),
+            database=config('DB_NAME'),
+            user=config('DB_USER'),
+            password=config('DB_PASSWORD')
         )
         cls.connection = db_connection
 
