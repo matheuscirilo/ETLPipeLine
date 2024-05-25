@@ -38,6 +38,40 @@ Certifique-se de ter os seguintes itens instalados:
 2. **Instale as dependências:**:
    ```bash
    pip install -r requirements.txt
-  
+
+3. **Configure o banco de dados MySQL**:
+- Crie um banco de dados chamado pipeline_db.
+- Atualize seu arquivo .env com suas credenciais do MySQL:
+
+   ```bash
+   DB_HOST=seu_host
+   DB_USER=seu_usuario
+   DB_PASSWORD=sua_senha
+   DB_NAME=pipeline_db
+   DB_PORT=sua_porta
+
+## Executando a Aplicação
+1. **Execute o script ETL:**:
+   ```bash
+   python run.py
+
+Isso irá extrair os dados da URL especificada, transformá-los e carregá-los no seu banco de dados MySQL.
+
+## Testes
+Execute a suíte de testes usando pytest para garantir que tudo está funcionando corretamente:
+   ```bash
+   pytest
+   ```
+
+## Contribuições
+Contribuições são bem-vindas! Por favor, faça um fork deste repositório, crie um novo branch e envie um pull request com suas alterações.
+Certifique-se de que seu código segue os padrões de codificação do projeto e passa em todos os testes.
+
+Obrigado por conferir este repositório! Esperamos que este projeto sirva como um exemplo útil de como construir uma aplicação ETL usando web scraping e várias bibliotecas Python. Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue ou entrar em contato.
+
+
+
+
+
 
 
